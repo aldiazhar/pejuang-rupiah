@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// Check if the user is already logged in
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    header('Location: index.php'); // Redirect to the index page
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
