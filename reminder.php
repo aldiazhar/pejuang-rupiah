@@ -80,7 +80,8 @@ if ($stmt) {
                 <tr>
                     <th>#</th>
                     <th>Reminder By</th>
-                    <th>Numeric Threshold</th>
+                    <th>Total</th>
+                    <th>Description</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -93,6 +94,7 @@ if ($stmt) {
                             echo "<td>Reminder By: " . $row['user_id'] . "</td>";
                             echo "<td>Numeric Threshold: " . $row['numeric_threshold'] . "</td>";
                             echo "<td>Status: " . $row['status'] ." </td>";
+                            echo "<td>" . $row['reminder_description'] ." </td>";
                             echo "<td>";
                             // Add update button triggering the modal
                             echo '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateModal' . $row['id'] . '">Update</button>';

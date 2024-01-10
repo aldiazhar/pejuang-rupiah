@@ -45,6 +45,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             <input type="password" class="form-control" id="password" name="password" required>
           </div>
           <button type="submit" class="btn btn-primary">Login</button>
+          <p>Don't have an account? <a href="register.php">Register</a></p>
         </form>
       </div>
     </div>
